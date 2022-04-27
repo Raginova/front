@@ -181,4 +181,12 @@ body {
         width: 100%;
         margin: auto
     }
+
+    .adressbook-box-aname__title-a {
+        top: 141px;
+    }
+        
+    .adressbook-box-bname__title-b {
+        top: 141px;
+    }
 }
