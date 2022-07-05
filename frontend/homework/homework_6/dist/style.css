@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 98px;
+  width: 100%;
+  background-color: #EDD603;
+  color: #652D90;
+  display: flex;
+  box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.2);
+}
+.header__logo {
+  height: 70px;
+  width: 70px;
+  margin-top: 14px;
+  margin-left: 23px;
+}
+.header__h {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  margin-top: 21px;
+  margin-left: 30px;
+}
+
+.catalog {
+  width: 100%;
+  margin: auto;
+  padding-bottom: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.catalog__boots {
+  height: 405px;
+  flex: 0 0 22%;
+  margin-top: 40px;
+  border-radius: 5%;
+  padding: 0;
+  box-shadow: 0 2px 40px 2px gray;
+  transition: 0.5s ease-in-out;
+  position: relative;
+}
+.catalog__boots:hover {
+  text-decoration: none;
+  transform: scale(105%);
+}
+.catalog__boots-1img {
+  width: 100%;
+  height: 315px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+.catalog__boots-1img:hover {
+  opacity: 0;
+}
+.catalog__boots-2img {
+  width: 100%;
+  height: 315px;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  position: absolute;
+  border-radius: 5%;
+  transition: 0.5s ease-in-out;
+}
+.catalog__boots-2img:hover {
+  opacity: 1;
+}
+.catalog__boots-h {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  margin-top: 335px;
+  margin-left: 12px;
+  padding-top: 0px;
+  color: black;
+  height: 42px;
+  width: 183px;
+  position: absolute;
+}
+.catalog::after {
+  content: "";
+  display: block;
+  flex: 0 0 22%;
+}
+
+.footer {
+  width: 100%;
+  height: 330px;
+  margin-top: 31px;
+  background-color: #535252;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+.footer__cate {
+  flex: 0 0 22%;
+  display: block;
+  margin-top: 25px;
+}
+.footer__cate-h {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+.footer__cate-ul {
+  list-style: none;
+  margin-left: 0%;
+  padding: 0px;
+}
+.footer__cate-a {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+  color: #FFFFFF;
+  padding: 0px;
+  line-height: 2;
+  text-decoration: none;
+}
+.footer__cate-a:hover {
+  color: aquamarine;
+}
+.footer__cate-li:hover {
+  margin-left: 20px;
+  transform: scale(115%);
+}
+.footer__logo {
+  margin-top: 25px;
+  height: 250px;
+  width: 300px;
+  text-align: right;
+  flex: 0 0 22%;
+}
+.footer__logo-img {
+  height: 181px;
+  width: 181px;
+  text-align: right;
+}
+.footer__logo-h {
+  margin-top: 48px;
+  font-size: 18px;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 760px) and (min-width: 320px) {
+  .header {
+    width: 100%;
+    height: 78px;
+    margin-bottom: 0%;
+  }
+  .header__logo {
+    margin: 0px;
+  }
+  .header__h {
+    font-size: 28px;
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+  .catalog {
+    width: 100%;
+    padding-bottom: 32px;
+  }
+  .catalog__boots {
+    height: 175px;
+    flex: 0 0 43%;
+  }
+  .catalog__boots-1img {
+    height: 137px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .catalog__boots-2img {
+    width: 100%;
+    height: 137px;
+  }
+  .catalog__boots-h {
+    width: 130px;
+    margin-top: 143px;
+    margin-left: 7px;
+    padding-bottom: 0px;
+    line-height: 21px;
+    font-size: 21px;
+  }
+  .catalog::after {
+    content: "";
+    display: block;
+    flex: 0 0 43%;
+  }
+  .footer {
+    width: 100%;
+    height: 889px;
+    padding-top: 24px;
+    padding-left: 16px;
+    margin: auto;
+    display: flex;
+    text-align: center;
+  }
+  .footer__cate {
+    height: 161px;
+    width: 100%;
+    margin-top: 0%;
+    flex: 0 0 90%;
+  }
+  .footer__cate-h {
+    font-size: 21px;
+    line-height: 28px;
+  }
+  .footer__cate-ul {
+    margin-top: 0%;
+  }
+  .footer__cate-li {
+    height: 11px;
+    margin-top: 11px;
+  }
+  .footer__cate-li:hover {
+    margin-left: 0px;
+  }
+  .footer__cate-a {
+    font-size: 16.24px;
+    line-height: 16px;
+  }
+  .footer__logo {
+    text-align: center;
+    margin-top: 20px;
+    flex: 0 0 90%;
+  }
+  .footer__logo-img {
+    height: 181px;
+    width: 181px;
+    text-align: center;
+  }
+  .footer__logo-h {
+    font-size: 10.5px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 48px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,9 @@
+@use "sass:math";
+
+$scale: math.div(100%, 1920);
+
+$f-size: 48px;
+
+$scale760: math.div(100%, 760);
+
+$f-size760: 28px;
